@@ -61,18 +61,18 @@ Make sure to:
 
 ```bash
 # Log in to Amazon ECR
-aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 163962798700.dkr.ecr.eu-west-1.amazonaws.com
+aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 163935755700.dkr.ecr.eu-west-1.amazonaws.com
 
 # Create ECR repositories
 aws ecr create-repository --repository-name devops-learning/frontend
 aws ecr create-repository --repository-name devops-learning/backend
 
 # Build and push images
-docker build -t 163962798700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/frontend:latest --platform=linux/amd64 ./frontend
-docker build -t 163962798700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/backend:latest --platform=linux/amd64  ./backend
+docker build -t 163935755700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/frontend:latest --platform=linux/amd64 ./frontend
+docker build -t 163935755700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/backend:latest --platform=linux/amd64  ./backend
 
-docker push 163962798700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/frontend:latest
-docker push 163962798700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/backend:latest
+docker push 163935755700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/frontend:latest
+docker push 163935755700.dkr.ecr.eu-west-1.amazonaws.com/devops-learning/backend:latest
 ```
 
 Replace `163962798700` with your AWS account ID.
