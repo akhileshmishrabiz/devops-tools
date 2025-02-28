@@ -16,7 +16,7 @@ spec:
       requirements:
         - key: "eks.amazonaws.com/instance-category"
           operator: In
-          values: ["c", "m", "r"]
+          values: ["c", "t"]
         - key: "eks.amazonaws.com/instance-cpu"
           operator: In
           values: ["4", "8", "16", "32"]
@@ -28,5 +28,5 @@ spec:
           values: ["amd64"]
 
   limits:
-    cpu: "1000"
-    memory: 1000Gi
+    cpu: "1000m"
+    memory: 100Gi
