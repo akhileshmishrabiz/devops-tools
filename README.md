@@ -24,3 +24,7 @@ docker-compose down
 ## start the application 
 
 docker-compose dow
+
+
+awsaccesskey: AKIA4ZPZU3T775AZFR77
+secte: Uz7g/GOVsjdTri0c1Om1/YkVO3FDipGA/sh4BEHA
